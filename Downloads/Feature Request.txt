@@ -1,0 +1,12 @@
+﻿Jammming Feature Request
+May 18th 2018
+
+
+OBJECTIVE
+To create a feature so that when a user has input a search term, they can press “enter” to trigger the search instead of having to click on the search button.
+BACKGROUND 
+This behavior is very common and almost expected by many users. You can find this kind of behavior in popular search engines such as Google. Even on the Spotify web app and desktop app, you find this behavior. Therefore, it would be a simple but very noticeable improvement to the design and functionality of Jammming to incorporate this behavior.
+TECHNICAL DESIGN
+This feature should be quite simple and quick to implement. All that would need to be changed is the onClick event handler in SearchBar.js component. By changing the onClick event for the submit button to an onSubmit event, the handler should be able to catch both a click on the submit button and hitting the enter key.
+CAVEATS
+Instead of using onSubmit, an additional event handler that listens for the keystroke could be added. However, this seems unnecessary and is not in line with the DRY (Don’t Repeat Yourself) best practices philosophy.
